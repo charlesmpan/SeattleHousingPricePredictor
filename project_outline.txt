@@ -2,12 +2,11 @@ Project Outline
 
 1. Business Understanding
 
-We are selling a real estate agency a predictive model where they can 
-enter in characteristics of a house it will predict what the house should cost.
-They can use this model to set prices for houses for their clients.
+A real estate developer focusing on 3D printed houses asked us to help them 
+identify areas in Seattle for them to buy cheap old houses for them to knock down 
+to build their 3D printed houses. 
 
-What variables affect housing prices?
-What price can a homeowner expecct given certain variables?
+a. Identify areas and characteristics for homes so they can buy.
 
 2. Data Understanding
 
