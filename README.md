@@ -80,7 +80,14 @@ This chart indicates that waterfront has a large impact on the price of homes.\
 Waterfront is one of our independent variables.
 
 ![alt text](./vis/modelsummary.png)
-Using all the independent variables (Sqft_living, waterfront, zipcode, grade, and view) and price as a dependent variable, we were able to generate a model summary with a R-Squared of 75.1%. This means that our model can account for 75.1% of the real estate listings. Our absolute mean error was around $10,415 meaning that our price estimate has around a $10,000 error which is relatively good considering that the house sale average was $1,113,428.95 basded off the prior dataset.
+
+### Final Model Description
+
+It is important to note for this model we transformed the price of homes to be the square root of the price of homes. We did this to normalize the distribution of price because it is originally skewed right. We experimented with transforming it to the log of price but we ultimately found the square root of the price to work better for our model.
+
+Our final model includes the following features: square foot of living space, zip code, whether it is a waterfront property, grade of construction, and view. Square foot of living space is the only continuous variable in our model. Waterfront was the only binary categorical variable in our model. For the rest of the features we transformed them into dummy variables.
+
+Our model has a p-value of the f-statistic of close to 0 which means we can reject the null hypothesis of our model having no significance in predicting the price of a home. We achieved an R-squared value of 0.751 which means our model explains about 75% of the variation in price using our features. The mean absolute error and mean squared error after squaring them are 10,248.87 and 25,479.47 respectively. This means our model on average has a margin of error of about $10,248 when predicting home prices.
 
 
 ### Recommendations
