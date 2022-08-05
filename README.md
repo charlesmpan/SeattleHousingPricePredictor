@@ -70,21 +70,17 @@ This chart indicates that grade has a large impact on the price of homes.\
 Grade is one of our independent variables.
 
 ![alt text](./vis/viewtoprice.png)
+
 This chart indicates that grade has a large impact on the price of homes.\
 View is one of our independent variables.
 
 ![alt text](./vis/waterfronttoprice.png)
+
 This chart indicates that waterfront has a large impact on the price of homes.\
 Waterfront is one of our independent variables.
 
 ![alt text](./vis/modelsummary.png)
 Using all the independent variables (Sqft_living, waterfront, zipcode, grade, and view) and price as a dependent variable, we were able to generate a model summary with a R-Squared of 75.1%. This means that our model can account for 75.1% of the real estate listings. Our absolute mean error was around $10,415 meaning that our price estimate has around a $10,000 error which is relatively good considering that the house sale average was $1,113,428.95 basded off the prior dataset.
-
-![alt text](./vis/count_of_below_grade_home.png)
-The following are the counts of below-grade homes by zip-codes that fit the business parameters of client. It's important to pick a great location that also has a wide availability of the houses that suit the business parameters.
-
-![alt text](./vis/count_of_good_views.png)
-The following are the counts of good view homes by zip-codes that fit the business parameters of client. 
 
 
 ### Recommendations
