@@ -48,7 +48,7 @@ This project uses the King County House Sales dataset, which can be found in  `k
 * `lat` - Latitude
 * `long` - Longitude
 
-- Insert Dataframe Head -
+![alt text](./vis/head.png)
 
 ### Findings and Conclusion
 
