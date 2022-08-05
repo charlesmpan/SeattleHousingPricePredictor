@@ -52,5 +52,77 @@ This project uses the King County House Sales dataset, which can be found in  `k
 
 ### Findings and Conclusion
 
+![alt text](./vis/salesbymonth.png)
+
+The following chart indicates the total real estate sale total by month. The purpose of the graph is to find the best timing of highest house availability assuming that house sales ties with house availability. January and February have the lowest sales, alongside with December. July and August have the highest sale total and relatively every month besides the prior three seem like a great time to buy.
+
+![alt text](./vis/corrmat2.png)
+
+The following chart above is a correlation heatmap to indicate how closely correlated all the variables are to each other. From there, we mostly looked at the price correlations to find which variables would impact the price the most. From there, we had to also pick variables that our client would look at and would be highly relevant to the business goal. There's no point in picking variables that have high correlation but have no actual impact on the business decision itself.
+
+![alt text](./vis/zipcodetoprice.png)
+
+This chart just indicates that zipcode has a large impact on the price of homes. There were a lot more than the amount of zipcodes shown so we had to limit the amount of zipcodes displays. Zipcode is one of our independent variables.
+
+![alt text](./vis/gradetoprice.png)
+
+This chart indicates that grade has a large impact on the price of homes.\
+Grade is one of our independent variables.
+
+![alt text](./vis/viewtoprice.png)
+This chart indicates that grade has a large impact on the price of homes.\
+View is one of our independent variables.
+
+![alt text](./vis/waterfronttoprice.png)
+This chart indicates that waterfront has a large impact on the price of homes.\
+Waterfront is one of our independent variables.
+
+![alt text](./vis/modelsummary.png)
+Using all the independent variables (Sqft_living, waterfront, zipcode, grade, and view) and price as a dependent variable, we were able to generate a model summary with a R-Squared of 75.1%. This means that our model can account for 75.1% of the real estate listings. Our absolute mean error was around $10,415 meaning that our price estimate has around a $10,000 error which is relatively good considering that the house sale average was $1,113,428.95 basded off the prior dataset.
+
+![alt text](./vis/count_of_below_grade_home.png)
+The following are the counts of below-grade homes by zip-codes that fit the business parameters of client. It's important to pick a great location that also has a wide availability of the houses that suit the business parameters.
+
+![alt text](./vis/count_of_good_views.png)
+The following are the counts of good view homes by zip-codes that fit the business parameters of client. 
 
 
+### Recommendations
+
+Based on our findings for the zipcodes they could be interested in, we have narrowed down 3 zipcodes that could be useful to them based on their budget and other business objectives.
+
+The 3 zipcodes we recommend are 98023, 98022, and 98199.
+
+![alt text](./vis/Federalway.png)
+
+1. For the 98023 zipcode, this zipcode location is known as Federal Way and is our first recommendation. This would be a good option for a cheap home in an upcoming neighborhood outside of Seattle.
+
+![alt text](./vis/Enumclaw.png)
+
+2. For the 98022 zipcode, this ziopcode location is known as Enumclaw and is our seconc recommendation. This zone gives you scenic views of Mt. Rainier. The negative being this is outside of Seattle and could limit the amount of people coming to see your model home.
+
+![alt text](./vis/Seattle.png)
+
+3. For the 98199 zipcode, located in the heart of Seattle; our last recommendation is this prime location for gathering investors with views of Elliot Bay and Seattle. Any real estate here will surely generate value over time.
+
+
+### Wanting to contribute?
+
+If you are interested in contributing to our study (Please don't):
+
+Fork this repository\
+Clone your forked repository\
+Add your scripts\
+Commit and push\
+Create a pull request\
+Star this repository\
+Wait for pull request to merge\
+Allow us to review your contribution\
+
+Repository Structure
+
+├── README.md <- The README for reviewers of this project\
+├── 01-Data_Cleaning.ipynb <- Documentation of the analysis process in Jupyter notebook\
+├── 02-EDA_and_Regression_Model <- The presentation in PDF\
+├── Data <- Both sourced externally and generated from code\
+└── vis <- Storage for all images used\
