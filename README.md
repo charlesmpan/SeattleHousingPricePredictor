@@ -1,4 +1,4 @@
-# Flatiron Phase 2 Project - Jung Lim Fan Club 
+# Seattle Housing Price Predictor - Linear Regression Model
 ~Jordan Mang, Garrett Hall, Charles Pan
 
 
